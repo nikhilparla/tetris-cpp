@@ -7,7 +7,7 @@ class Pieces
         int getBlockType(int pPiece, int pRotation, int pX, int pY);
         int getInitXPos (int pPiece, int pRotation);
         int getInitYPos (int pPiece, int pRotation); 
-}
+};
 
 
 #endif
