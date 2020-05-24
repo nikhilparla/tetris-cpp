@@ -1,6 +1,6 @@
+#include "../include/Pieces.h"
 
-
-char pieces [7 /* kind*/][4 /*rotation*/][5 /*horizontal*/][/*vertical*/]
+char allPieces [7 /* kind*/][4 /*rotation*/][5 /*horizontal*/][5 /*vertical*/] = 
 {
     // Square
     {   // rotation
@@ -78,7 +78,7 @@ char pieces [7 /* kind*/][4 /*rotation*/][5 /*horizontal*/][/*vertical*/]
             {0,0,0,0,0},
             {0,1,2,1,0},
             {0,1,0,0,0},
-            {0,0,,0,0},
+            {0,0,0,0,0},
         },
         {   // 
             {0,0,0,0,0},
@@ -220,3 +220,70 @@ char pieces [7 /* kind*/][4 /*rotation*/][5 /*horizontal*/][/*vertical*/]
         },
     },
 };
+
+int piecesPosition[7][4][2] = 
+{
+    // square
+    {
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+    },
+    // I
+    {
+        {-2,-2},
+        {-2,-3},
+        {-2,-2},
+        {-2,-3},
+    },
+    // L
+    {
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+        {-2,-2},
+    },
+    // L mirror
+    {
+        {-2,-3},
+        {-2,-2},
+        {-2,-3},
+        {-2,-2},
+    },
+    // N
+    {
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+        {-2,-2},
+    },
+    // N mirror
+    {
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+        {-2,-2},
+    },
+    // T
+    {
+        {-2,-3},
+        {-2,-3},
+        {-2,-3},
+        {-2,-2},
+    },
+};
+
+int Pieces::getBlockType(int pPiece, int pRotation, int pX, int pY)
+{
+    return allPieces[pPiece][pRotation][pX][pY];
+}
+
+int Pieces::getInitXPos (int pPiece, int pRotation)
+{
+    return piecesPosition[pPiece][pRotation][0];
+}
+int Pieces::getInitYPos (int pPiece, int pRotation)
+{
+    return piecesPosition[pPiece][pRotation][1];
+}
