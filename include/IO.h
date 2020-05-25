@@ -2,11 +2,11 @@
 #define _IO_
 
 #ifndef LINUX
-#include "SDL/include/SDL.h"                            
-#include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
+#include "SDL/SDL.h"                            
+#include "SDL/SDL_gfxPrimitives.h"
 #else
 #include <SDL/SDL.h>                                  
-#include "SDL/SDL_GfxPrimitives/sdl_gfxprimitives.h"    
+#include "SDL/SDL_gfxPrimitives.h"    
 #endif
 
 #pragma comment (lib, "SDL/lib/SDL.lib")

@@ -1,5 +1,15 @@
 #include "../include/Game.h"
 
+Game::Game(Board *pBoard, Pieces *pPieces, IO *pIO, int screenHeight)
+{
+    mScreenHeight = screenHeight;
+    mBoard = pBoard;
+    mPieces = pPieces;
+    mIO = pIO;
+
+    InitGame();
+}
+
 int Game::getRand(int pA, int pB)
 {
     return rand() % (pB - pA + 1) + pA;

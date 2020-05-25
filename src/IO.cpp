@@ -24,7 +24,7 @@ void IO::DrawRectangle(int pX1, int pY1, int pX2, int pY2, enum color pC)
 
 int IO::GetScreenHeight()
 {
-    mScreen->h;
+    return mScreen->h;
 }
 
 void IO::UpdateScreen()

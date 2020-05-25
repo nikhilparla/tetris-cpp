@@ -4,7 +4,8 @@
 #include <windows.h>
 #endif
 
-int WINAPI WinMain(HINSTANCE hInstance, HININSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+// int WINAPI WinMain(HINSTANCE hInstance, HININSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+int main()
 {
     IO mIO;
     int mScreenHeight = mIO.GetScreenHeight();
@@ -67,7 +68,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HININSTANCE hPrevInstance, LPSTR lpCmdLi
                 if(mBoard.isGameOver())
                 {
                     mIO.GetKey();
-                    exit();
+                    exit(0);
                 }
                 mGame.createNewPiece();
             }
