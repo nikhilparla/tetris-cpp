@@ -17,4 +17,4 @@
 
 ### **Application**
 
-<img src="./img/app.PNG" alt="app" style="zoom:75%;" />
+<img src="./img/app.png" alt="app" style="zoom:75%;" />
