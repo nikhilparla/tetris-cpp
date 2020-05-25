@@ -14,3 +14,7 @@
 ```sudo apt-get install libsdl1.2-dev```
 ```sudo apt-get install libsdl-gfx1.2-dev```
   SDL2 graphics drawing primitives and other support functions
+
+### **Application**
+
+<img src="./img/app.PNG" alt="app" style="zoom:75%;" />
